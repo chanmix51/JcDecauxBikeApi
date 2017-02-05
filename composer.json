@@ -1,0 +1,27 @@
+{
+    "name": "chanmix51/JcDecauxBikeApi",
+    "type": "library",
+    "description":  "JCDecaux bika API access library",
+    "keywords": ["jc_decaux"],
+    "license":  "MIT",
+    "authors":  [ { "name": "Grégoire HUBERT", "email": "hubert.greg@gmail.com", "homepage": "http://www.coolkeums.org" } ],
+    "require": {
+        "php": ">=5.5",
+        "psr/log": "~1.0",
+        "guzzlehttp/guzzle": "~6.2"
+    },
+    "require-dev": {
+        "atoum/atoum" : "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chanmix51\\JcDecauxBikeApi\\": "sources/lib"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Chanmix51\\JcDecauxBikeApi\\Tests\\": "sources/tests"
+        }
+    },
+    "minimum-stability": "dev"
+}
