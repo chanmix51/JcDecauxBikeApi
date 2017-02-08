@@ -13,9 +13,9 @@ use Mock\Psr\Http\Message\ResponseInterface;
 
 class JcDecauxBikeApi extends Atoum
 {
-    public function getBikeApi(ClientInterface $client, string $json)
+    public function getBikeApi(ClientInterface $client, $json)
     {
-        $client->getMockController()->request = function (string $method, string $url, array $header) use ($json) {
+        $client->getMockController()->request = function ($method, $url, $header) use ($json) {
 
             $response = new ResponseInterface;
             $response->getMockController()->getStatusCode = function() { return 200; };
