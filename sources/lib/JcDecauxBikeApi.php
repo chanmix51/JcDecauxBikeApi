@@ -142,7 +142,7 @@ class JcDecauxBikeApi
      */
     protected function checkJson($json)
     {
-        $output = json_decode($json);
+        $output = json_decode($json, true);
 
         if ($output === false) {
 
